@@ -1,0 +1,131 @@
+<html>
+<head>
+    <title> Umay Demirel</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" type="image/icon">
+    <link rel="stylesheet" href="main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-81TWVK4QX5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-81TWVK4QX5');
+</script>
+    
+</head>
+<body>
+    <div class="anaSayfa">
+        <div class="topBar">
+            
+            <a href="index.html">
+            <img id="logo" src="logo.svg" alt="Umay Logo"> 
+            </a>
+            
+            <div class="buttonMenu">
+            <button>
+                <a href="about.html">About</a>
+            </button>
+            <button>
+                <a href="projects.html">Projects</a>
+            </button>
+            <button>
+                <a href="contact.html">Contact</a>
+            </button>
+        </div>
+        </div>
+
+
+        <div class="container">
+    
+            <ul class="tab-menu">
+                <li class="project"><a href="#tab1"><img class="projectimg"src="flide.png"> <p>Flide</p></a></li>
+                <li class="project"><a href="#tab2"><img class="projectimg"src="dune.png"><p>Dune</p></a></li>
+                <li class="project"><a href="#tab3"><img class="projectimg" src="garantimo.png"><p>Garantimo</p></a></li>
+                <li class="project"><a href="#tab4"><img class="projectimg"src="sencilla.png"><p>Sencilla</p></a></li>
+                <li class="project"><a href="#tab5"><img class="projectimg"src="poster.png"><p>AMG Poster</p></a></li>
+            </ul>
+            <div class="tab-container">
+                <div id="tab1" class="tab-content" style="display: none;">
+                
+                    <img class="projectdetailleft" src="flide1.png"> 
+                    
+                    <div class="sagyazilar">
+                        <p id="projectheader1">Flide</p>
+                        <p>  A D.I.Y ice sled <br> made of folded polypropylene sheets. <br> Inspired by children  <br> who use plastic bags as sleds.</p>
+                    </div>
+                     
+                    <div class="solyazilar">
+                        <p id="projectheader12">Easy, economic and fun!</p>
+                        <p> 2nd year studio
+                        <br> 2019</p>
+                    </div>
+                   
+                    <img class="projectdetailright" src="flide2.png"> 
+                </div>
+                </div>
+                <div id="tab2" class="tab-content" style="display: none;">
+                    <img class="projectdetailleft" src="dune1.png"> 
+                    <div class="sagyazilar">
+                        <p id="projectheader2">Dune</p>
+                        <p>  Laundry care <br> product family</p>
+                    </div>
+                    <div class="solyazilar">
+                        <p id="projectheader22">Refreshing,cleaning,<br>sterilizing and preparing.</p>
+                    </div>
+                    <img class="projectdetailright" src="dune2.png"> 
+                   
+                </div>
+                <div id="tab3" class="tab-content" style="display: none;">
+                    <img class="projectdetailleft" src="garantimo1.png"> 
+                    <div class="sagyazilar">
+                        <p id="projectheader3">Garantimo</p>
+                        <p> A mobile monetary app <br> in collaboration with Garanti BBVA</p>
+                    </div>
+                </div>
+                <div id="tab4" class="tab-content" style="display: none;">
+                    <img class="projectdetailleft" src="sencilla1.png"> 
+                    <div class="sagyazilar">
+                        <p id="projectheader4">Sencilla</p>
+                        <p> Lunch kit<br> to provide natural food experience</p>
+                    </div>
+                    <div class="solyazilar">
+                        <p id="projectheader42">Natural, simple <br>and chic.</p>
+                    </div>
+                    <img class="projectdetailright" src="sencilla2.png"> 
+                </div>
+                <div id="tab5" class="tab-content" style="display: none;">
+                    <img class="projectdetailleft" src="amg1.png"> 
+                    <div class="sagyazilar">
+                        <p id="projectheader5">Alternative<br>
+                        Music Days</p>
+                        <p> <br> </p>
+                    </div>
+                    <div class="solyazilar">
+                        <p id="projectheader52">Posters and <br> social media posts</p>
+                    </div>
+                    <img class="projectdetailright" src="amg2.png"> 
+                </div>
+            </div>
+            
+        </div>
+       
+       
+</div>
+<footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".tab-menu a").click(function(event) {
+                event.preventDefault();
+                $(this).parent().addClass("current");
+                $(this).parent().siblings().removeClass("current");
+                var tab = $(this).attr("href");
+                $(".tab-content").not(tab).css("display", "none");
+                $(tab).fadeIn();
+            });
+        });
+    </script>
+</footer>
+</html>

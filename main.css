@@ -1,0 +1,383 @@
+
+  @font-face {
+    font-family: JostBold;
+    src: url(static/Jost-Bold.ttf);
+  }
+  @font-face {
+    font-family: JostRegular;
+    src: url(static/Jost-Regular.ttf);
+  }
+  @font-face {
+    font-family: JostItalic;
+    src: url(static/Jost-Italic.ttf);
+  }
+  @font-face {
+    font-family: kattyPurry;
+    src: url(static/kattyPurry.ttf);
+  }
+
+*{
+    padding: 0;
+    margin:0;
+    border: none;
+    /* border: 1px solid red; */
+}
+body{
+    background-color: #00828b;  
+}
+
+/* top barla ilgili  */  
+    .topBar {
+        display: block;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+    }
+    .buttonMenu {
+        display: inline;
+        float: right;
+    }
+
+    #logo {
+        margin-top: 10px; 
+        margin-bottom: 10px;
+        margin-left: 1% ;
+        width:3vw ;
+        min-width: 50px;
+        z-index: 5;
+    }
+    button {
+        
+        margin-top: 20px; 
+        margin: 3px;
+        min-height: 50px;
+        text-align: center;
+        font-size:calc(10px + 1vh);
+        font-family: JostBold;
+        background-color: transparent;
+        color: #ffffff;   
+    }
+
+    a {
+        margin-left: 15px; 
+        margin-right: 15px;
+    }
+
+    a:link {
+        color: rgb(255, 255, 255); 
+        text-decoration: none;
+    
+    }
+
+    a:visited {
+        color: rgb(255, 255, 255); 
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(219, 81, 81);
+        
+    }
+
+.attab{
+  color:  rgb(219, 81, 81);  
+}
+
+
+/* indexle ilgili */
+    .ortabolum {
+        text-align: center;
+        color: #ffffff;   
+        background-image: url(products.png);
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh
+
+    }
+    #buyukyazi {
+        align-self: center ;
+        margin-top:1em ;
+        font-size:calc(60px + 6vh);
+        font-family: kattyPurry;
+        line-height: 0.9em ;
+
+    }
+
+    #kucukyazi {
+        margin-top:0px ;
+        font-size:calc(14px + 1vh);
+        font-family: JostRegular;
+      
+    }
+
+    #cv {
+      display: inline;
+    }
+
+  .contact{
+  float: right;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  align-items: center;
+  margin: 1vw;
+  max-width: 7vh;
+    }
+ .logo{
+  margin: 5px;
+  max-width: 50px;
+}
+
+/* aboutla ilgili */
+    #solfoto {
+        width: 44vw;
+        float: left;
+        position: fixed;
+        bottom: 0;
+        z-index: -2;
+      
+    }
+    .gridcontainer{
+        position: fixed;
+        right: 0;
+        margin-right: 8vw;
+        margin-top: 3vw;
+        display: grid;
+        float: right;
+        grid-template-columns: auto auto  ;
+        grid-template-rows: auto auto auto ;
+    }
+
+    .cv{
+        font-size: calc(6px + 1vh) ;
+        font-family: JostRegular;
+        color: #ffffff;   
+        margin: 8px;
+        list-style-type: none;
+    }
+    .header{
+      font-size: calc(12px + 1vh );
+      font-family: JostBold;
+      color: #e69293;
+    }
+    #intro{
+      font-size: calc(24px + 3vh ) ;
+      font-family: kattyPurry;
+      grid-column: span 2 ;
+      color: #ffffff;   
+    }
+
+/* projects tableriyle ilgili */
+
+    .tab-menu{
+      display:inline-block;
+      vertical-align: top;
+      width: auto;
+      text-align: center;
+      font-family: JostBold;
+      list-style-type: none;
+      font-size: calc(14px + 1vh) ;
+      align-items: center;
+    }
+    .current{
+      width: 20%;
+      float: left;
+    }
+    .project{
+      width: 20%;
+      float: left;
+    }
+    .projectimg{
+      max-width: 17vw;
+      margin: 1vw;
+      margin-top: 6vw;
+    }
+
+/* project detailsle ilgili */
+.tab-content{
+  background-image: url(projectbg.png);
+  background-repeat: no-repeat;
+  height: 180vw;
+  width: 100vw;
+  float: inline;
+  bottom: 0;
+  z-index: -3;
+  margin-top: 1vw; 
+}
+.projectdetailleft{
+  width: 45%;
+  z-index: 3;
+}
+.projectdetailleft2{
+  width: 50%;
+  float: right;
+  z-index: 3;
+  background-color: #ffffff;
+}
+.projectdetailright{
+  float: right;
+  width: 45%;
+  display: inline;
+}
+.sagyazilar{
+  float: right;
+  margin-top:0 ;
+  margin-right: 10%;
+  font-size: 18px;
+  font-family: JostRegular;
+}
+.solyazilar{
+  float: left;
+  text-align: right;
+  margin-top:10vw ;
+  margin-left: 5%;
+  font-size: 18px ;
+  font-family: JostRegular;
+}
+
+#projectheader1{
+    margin-top:10vw;
+    line-height: 0.9em;
+    margin-right: 15vw;
+    font-size: 10vw ;
+    font-family: kattyPurry;
+    color: #e65a4c; 
+  }
+ #projectheader12{
+    font-size: 2.3vw ;
+    font-family: kattyPurry;
+    color: #8f8eb5; 
+  }
+
+#projectheader2{
+  margin-top:10vw;
+  line-height: 0.9em;
+  font-size: 10vw ;
+  margin-right: 15vw;
+  font-family: kattyPurry;
+  color: #00a2aa; 
+}
+#projectheader22{
+  font-size: 2.4vw ;
+  font-family: kattyPurry;
+  color: #5c5c5c; 
+}
+#projectheader3{
+  margin-top:10vw;
+  line-height: 0.9em;
+  font-size: 8vw ;
+  font-family: kattyPurry;
+  color: #32368e; 
+}
+#projectheader32{
+  font-size: 2.4vw ;
+  font-family: kattyPurry;
+  color: #8f8eb5; 
+}
+#projectheader4{
+  margin-top:10vw;
+  line-height: 0.9em;
+  margin-right: 8vw;
+  font-size: 8vw ;
+  font-family: kattyPurry;
+  color: #acc4bc; 
+}
+#projectheader42{
+  font-size: 3vw ;
+  font-family: kattyPurry;
+  color: #156775; 
+}
+#projectheader5{
+  margin-top:5vw;
+  line-height: 0.9em;
+  margin-right: 2vw;
+  margin-top: 5vw;
+  font-size: 6vw ;
+  font-family: kattyPurry;
+  color: #4dac48; 
+}
+#projectheader52{
+  font-size: 3vw ;
+  font-family: kattyPurry;
+  color: #322f2f; 
+}
+
+.formcontainer{  
+  background-image: url(products.png);
+  background-repeat: no-repeat;
+  background-position:bottom;
+}
+
+/* şekilli yazı şeyleri */
+/* .container{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.mask {
+    fill: none;
+    stroke: #fff;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .Letters {
+    cursor: pointer;
+    fill: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+  } 
+  
+  
+  .mask {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+  }
+
+  @keyframes strokeOffset {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  
+  #maskU {
+    animation: strokeOffset 1s linear forwards;
+  }
+  #maskM1 {
+    animation: strokeOffset 1s linear forwards 1s;
+  }
+  #maskA {
+    animation: strokeOffset 0.5s linear forwards 2s;
+  }
+  #maskY {
+    animation: strokeOffset 0.5s linear forwards 2.5s;
+  }
+  #maskD {
+    animation: strokeOffset 0.5s linear forwards 3s;
+  }
+  #maskE1 {
+    animation: strokeOffset 0.5s linear forwards 3.5s;
+  }
+  #maskM {
+    animation: strokeOffset 0.5s linear forwards 4s;
+  }
+  #maskI {
+    animation: strokeOffset 0.5s linear forwards 4.5s;
+  }
+  #maskR {
+    animation: strokeOffset 0.5s linear forwards 5s;
+  }
+  #maskE {
+    animation: strokeOffset 0.5s linear forwards 5.5s;
+  }
+  #mask-Ll {
+    animation: strokeOffset 0.5s linear forwards 6s;
+  } */
